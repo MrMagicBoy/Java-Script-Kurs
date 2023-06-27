@@ -1,0 +1,18 @@
+function removeVowels(doc) {
+  // Tablica zawierająca wszystkie samogłoski
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y'];
+
+  // Zmienna przechowująca wynik
+  let result = '';
+
+  // Pętla iterująca po każdym znaku w łańcuchu `doc`
+  for (let char of doc) {
+    // Jeśli znak nie jest samogłoską, dodaj go do wyniku
+    if (!vowels.includes(char)) {
+      result += char;
+    }
+  }
+
+  // Zwróć wynik
+  return result;
+}
