@@ -1,0 +1,12 @@
+function isWerewolf(target) {
+let direct = "";
+let reversed = "";
+for (let character of target){
+if (/[a-zA-Z]/.test(character)){
+direct += character.toLowerCase();
+reversed = character.toLowerCase() + reversed;
+}
+}
+return direct === reversed;
+
+}
