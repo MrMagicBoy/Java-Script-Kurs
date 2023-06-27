@@ -1,0 +1,10 @@
+const string = 'Do you have any hobbies?';
+let result = '';
+
+for (const char of string) {
+  if (char !== ' ') {
+    result += char;
+  } 
+}
+
+console.log(result);
