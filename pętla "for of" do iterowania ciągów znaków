@@ -1,0 +1,12 @@
+function countMs(text) {
+  let count = 0;
+
+  for (const char of text) {
+    // we check if char is 'm' or 'M'
+    if ('Mm'.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
