@@ -1,0 +1,4 @@
+function getStringLength(input) {
+ 
+return  input.length ;
+}
