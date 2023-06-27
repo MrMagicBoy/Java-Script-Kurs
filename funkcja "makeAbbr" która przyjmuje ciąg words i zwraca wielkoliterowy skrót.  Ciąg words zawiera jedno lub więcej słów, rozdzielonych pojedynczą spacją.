@@ -1,0 +1,14 @@
+function makeAbbr(words) {
+  let abbreviation = "";
+  let wordArray = words.split(" ");
+  
+  for (let i = 0; i < wordArray.length; i++) {
+    let word = wordArray[i];
+    if (word !== "") {
+      abbreviation += word.charAt(0);
+    }
+  }
+  
+  abbreviation = abbreviation.toUpperCase();
+  return abbreviation;
+}
